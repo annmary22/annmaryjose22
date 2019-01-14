@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Agency FB;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image.jpg);
+	height: 200vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 15px;
+	position: relative;
+
+}
+ul li{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	opacity: .8;
+	text-align: center;
+}
+ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+	display: block;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+	margin-top: 20px;
+
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.title h1{
+	color: #fff;
+	font-size: 28px;
+	font-family: Agency FB;
+	margin-left: 0%;
+	word-spacing: 12px;
+
+  
+}
+.container{
+
+	width: 1280px;
+	background: transparent;
+	margin: 120px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .box{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.container .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img{
+	max-width: 100%;
+	transition: transform 2s;
+
+}
+.container .box:hover .imgBox img{
+	transform: scale(1.2);
+}
+.container .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details{
+	transform: scaleY(1);
+}
+.container .box .details .content{
+	position: absolute;
+	top:0%;
+	transform: translate(-0.8%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+.container .box .details .content h2{
+	margin:0;
+	padding: 0;
+	font-size: 18px;
+	color: yellow;
+
+}
+.container .box .details .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 16px;
+
+}
